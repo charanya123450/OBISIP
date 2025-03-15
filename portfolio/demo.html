@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="demo style.css">
+
+  <title>Portfolio</title>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="left">
+      <a href="/">Charanya Pati</a>
+    </div>
+
+    <div class="right">
+      <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>Github</span>
+      </a>
+      
+      <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>Linkedin</span>
+      </a>
+      
+      <a href="mailto:john@example.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi! I'm charanya 👋</h2>
+        <p></p>I'm a passionate and curious BTech student specializing in Data Science. I'm currently looking for job and internship opportunities where I can leverage my skills in Python coding, data analysis, and frontend design to contribute to impactful projects. I thrive at the intersection of technology and creativity, with a keen interest in building user-centric interfaces and uncovering valuable insights through data.
+
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-code"></i>
+            <span>Skills</span>
+          </a>
+          
+          <a href="#Projects">
+            <i class="fa-solid fa-pen"></i>
+            <span>Projects</span>
+          </a>
+          
+          <a href="#contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="https://static.vecteezy.com/system/resources/previews/049/796/035/non_2x/girl-icon-symbol-illustration-isolated-on-white-background-vector.jpg" alt="john doe headshot">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills" class="skills-section">
+      <h2>Skills</h2>
+      <div class="text" style="text-align: center;">
+        <b>Programming Languages:</b> Python, R (familiar) <br>
+        <b>Data Science:</b> Data cleaning, data visualization, statistical analysis<br>
+        <b>Frontend Development:</b> HTML, CSS, JavaScript basics, UI/UX design<br>
+        <b>Computer Science Fundamentals:</b> Data Structures and Algorithms (DSA), Database Management Systems (DBMS)<br>
+        <b>Tools & Libraries:</b> Pandas, NumPy, Matplotlib, Scikit-Learn, Figma (for UI/UX design), Git/GitHub
+
+      </div>
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html-logo.webp" alt="html logo">
+          <span>HTML</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/css-logo.webp" alt="css logo">
+          <span>CSS</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/javascript-logo.webp" alt="javascript logo">
+          <span>JavaScript</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/node-logo.webp" alt="node logo">
+          <span>Node.js</span>
+        </div>
+        
+        <div class="cell">
+          <img src="images/react-logo.webp" alt="react logo">
+          <span>React.js</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Testimony -->
+    <section id="Projects" class="testimony-section">
+      <h2>Projects</h2>
+
+      <div class="group">
+        <div class="person-details">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABGlBMVEX///80aYRRPjb/27309PQrOEHqvqAzaoZSPDL/4MFPPDQwZ4Iya4dMOTJSPTT/4MJFLiRFgppFMiwiYH36+fgpY4D/48T/2bpJNCs2Zn9DLCFHMSdDMCo8X3JAJxvp5+aro6CYr7yHorF5bGe6tLJAWWhOQj7YuJ9eSkDxzrLQsZkVJzLQ2uCfl5NgT0hrXFbHwsDe29lKSkxDVF+KcmOKgHyojXqbgXDBo41sV0vxyKq3xs9Qe5Lj6u3G0tk+eZJih5xITVN0ZmB7ZFfSzs24nIb/6tn/9/B0lKaLkZUsQEy0rKqVi4eUe2qnjHlpVUkyHxzbspYAEiJrcngLIS5UXWSZnqG9wMJkbHGmucN8gIRVc4QuS1t4oLIYVv6UAAAReElEQVR4nNWdCVviSBqATUCRkAAN4b5E5VIUb1FAwaPbbtt2d6d7epid/f9/Y6sqB5WkcqcS/J6dZ3ZAkrz5zqr6KtnYoC9i/PTk9ehyb3TcZ1m2fzzauzzaPzmNh3Bq+iK2To722GY1WysLHMci4ThOKNey1WZ/7+ikJUZ9iX6ktX95nM0CNJYsADRbO77cb0V9od7k9Oi4XCubwWGY5Wz5eOfDQbZ22KYDuhVl82NBnuxla87xZMha7fIp6gt3KK/HWcElniTl7Gg/6ou3F/G17Fp9mCKz7Loz7vez3vkQY/X4JGoIC3kaVf3xSYx7p1GDmIh4WfPmf3oRakdRsxDlabtses3pbSDg311Z5E/SZn9f66+fGsXvTbKBApR092zRaTQqlQrDJHg+wTCVSqPROV+csRK4UbjqTtREOmmNaqQLBdd/dt6oMAALcMF/JJH+iweknUWXrMvq3loV5k9Vggdub3fPGwkAo4IZBHzHJyqdMxJkmV0jS301htA0xON5UzYcM8EDyLTBXLns2uSNo6qR76zBGPGAQoHOEka9gk8aC9bA2FyT9P9dD7i9vagkEhoAHqiz0uh0zqF0YNjhoW/if8RXzg2M1deo4aBc6gC304sKr6EDbOcobGqkK8UgLPzwzDmr88fmTtR4wESzOsCzBr9SDXCxBoyWpHAJU2J3AbSZwPS40P1lM3It6nwwzXZ4DI9pAN2Z5nUJkz3rrHSe4BtdralWI/bF/aZOgRXM6CoL1iSh6yEXK70nEgvtb2qRjhqfNBpMpzurCwXqs9ae5s7A2Kv8lG9ovJErRzj4b7F4Hkx3G/yKr+ucT1Jkt6MiVrr4b4Xj6KbjHvBaG7NQ3o3+VoxqjEowZ7illi+jAtSE0e2zlQo88EmMiwoRMapoc4pHme2Fev/PnYQXE8a0bKraeBORK4rHmBNuL+RAYYj2LkWxda0Wy3tREB7V8OuSAOGt92Sg2KFYKV4lGDzcRGGnp3ii6EqAfhUoMy4kc6jgHzbDHy3uYSPCdCOBFNjxq0AZUbLURAO30+9hA55gYWZbrtQWnhXIPWoGmOkuQuTPsQPWwh4PY2EmjfJEouLDQoW3vua/05Iz8t3VR2EHm30sFaYryKT0Ax83wvWfc9pPtiGixk6r4SoRUyHIhOBud/x5YL2nI5RMP3G2OqwQqhJPMBVuA5/hOz5jaK53oZ/LQoi4EpthKvFhdTlpoEJNSPBG+Nyr6z+DiLgSwyxP8XptGwx7fAOCUBPrG+brgC8mcOPIhle7XWJjim4AGgSh5qZ4bZxyBYh42i+HtpwRx1W4CAIQBNOiIdZAaeAJgwttoPiKV6Qdv0FGlhjBTIFU8DKiGtaExggfVJwHwscKg6IhmrKwullgaSisWHNKXITxKbleckwyU62Uw6m/d+gQZgaGfGGQajgrGQ/BrPTqCMfJImu7RB6OmbbMl3r9ED5nkiRH1Ek2DML9rO11eBDhKpnRV98ECSWaXlLRoXCdTBoLN4OEkvTtvcUT4Vsy5iDUcCP6gK2m7WV4IrzImOR8HSL9fLFPI1cAwsdiLPboINTQd0Q6bogIk2/2hOUd6oQOLMkbYSaW+WFPSH+kHzd0JQQj3E0slnSQLuiPL56oZENw5e+A0EFlytZoD4MpBRou1y8BQvt0QT/nf6cQaLhc/f3HIBaL9Vh7JdZoty7sBVx2c0Ku3r/qxUA2BGY6uK7bHZ96VXMcYCgVhJzQvxgPismYIsXBRc6akXYwjQdTs3EArs7eXI8HMQwPSab3aMnIHdMl9D10Qmx19vH6uTeIJXV0SJKZ3ls9Z34ja3TTxamndMgBLiEHBVjl1RiyZTIEOBVy8NzPme0lorySeGKTDjkkgiQQqQ6vtP/+eHF9NT7oDYrFYpKoOT1jsnfdzxEpKa/QYBOJIApKDLLkBOA+/X7//ebm8fHi4u3t+up5PO71eoNBKYPArNRGYIz1ni/ehTrUPDq2LJS7To8UPxTq729XV4Dh4ABBKFIqSZcHgeD/XFHpBZjyoDd+Buf58ZhTXLNGd0lfTvhc7nogU2QyDozOj8A7Bf6JjftSOUA55UtjJ6HfK9LFIpHGrlFRRznlo5JGeB9Q1psJ4xXUIuUZRTShnxv48i7vkoHzjXSLGtQHVR9HokEkYPxNdzIKFm1wrBqVwClVrk+VsAxnp6NTYSwGPLFMlTALvTBCwOINx1ZpEqLJ0igJ4dpGlWbpjQrvSAnfACHN0ht2rguRWinUIc25KDi0qPcijDRFkC6yNAcXkDDyWEqVEM4lojWUiCRzkKO8dIGGh0IpMkLUVkSfMDeOTIkDOBFGlRC1YXDv4Q+dJJGm/akO8qVGk3ovKiW+c9QJpQFwRLW3vK5BlVCepslFNH6SHsMUBiEXSeVWlJeIwyCUVt1DluRBLoTpRHUysX4VNmJmoCyZhEPI1g9CjqelG2VSOIRYKs14h5wyVp0oIRFCxDAD6uNqdTiEjC8jhjfnlhzcYMvfVAlfNX0K9etSKIzJAxZfMw2RkM31x/ol3ODx4MK3ZpGNauWt7zXhcv3nHlXAwdiw6E2V0LhAyuX+RTNvJC+MzRlUx/hPhEVu4YJi8h8QOiOobg4iEdKcfCP2gVGdayO2z+au6JnpDWkhn+aMcJzUqMD1afGRO7+p9uvHiTtFcweUUgZxoxDHUiUkNn0Jj3QAya3tlJvZR8Q2HkrT4EViVzTlxrZLYssZpQHxgHg7KXcqmLSXUlFi8prYbUq522SHTAj70AOXAblFkXJPlFlfG4VwmjHZm0B50/qpCSGFKVSzPUKUexNb5LNSmEItmmygoduKsWHeBc1xwQImD0xUSH1LiWkne+460IxRMtubQ72T3SSYsmgnb3CAmR9m+xKytJ+nZN4kLLwHCEh8/AASqmMnKC3zRu/cj+CCjen+Me6Y+gZEi+0IuaAqmyK5mkGWQv8pNRb7Dzk2GEB1DYYgtR3qhFbd+gEVb6TJGZWQ/mN4LDcgBjOhcWO+Z4Z6vodi+UiFAOrT4pvFBrZQHqpg+VgMTvDbAl58ttqEGMqDMVqWeyw5zl8TeMZ6l2UoT42wefKHv0b+zIHlwUN6QI3NgzGEG++IyZ7FpjUgzXAeMiTa7EEEWvRoqBkbwDCeGYHkyGYTotD3hpgcWwPSr7oVsX00htD3Ms4oPtsAcv3QHmJqu6FbEA5cjxaT13Z71UOo2BSxThhI6j9cAmqW6skqpDqdrxMHD8OqX7gCLP3bdht8M8wXeoj2m9aFty0X64q3W7d2jxQRHkIENFkq1UhufLu15bBferC1NTCbW1Mk9Gd6619rYbzlPaCYrVsHjKUtAChvLjSX0DKFKg/W8RQtmwJEW8YS/KMSKmesjlcL/9n68b51eYr6F6B6tqz88Rb9gXQTrEqlMuUnKRClZVm8KXPgEsLtgKDJ0mBL+lL6TytHLNOffyIiChZarCuKK0mMiFLBLJUGt8rHqoYtnr9TPo7oJR6tY1NfxNdMS1sWgrmp6ePaaqPIXlAWfzBLGlXNQs3AFBA33uQj8YZxzUhejKDIDvmVoyDyfdZ4HplRE4JKnzf2CIjlcsQvCzp9ILy2UhiJGxtfdHHlVod3q+WLfYGtHvr7xVX3on+J7klfz8hto6v6kinpIdWoc6vLIKUManQ61b6lVWiO1uMFuiejrObtxuo69GdStid+9lk51GroydWyD+vBB6V1NFq9oRp7n8gXIo+R+Yv6ix1UDcI3WY/W7SXPrdfLURW+Qr2KL2GKekslAWbwVrzLZrZZG31fz7eRi/HT/Z3vujVaoqUSLVQ+yOvJ6Vq9n9NerC0Vt9APK1aWqlPghxVTS/1ogKIYj5NdiGypZhYKjiJG9zI5M5kt45KYXBrBUs0UKMpHWs7oXa5LEYftaT6/lK/M5I+MlmpmofKdWubz0/ZwDXQp3u1O84UUk+Ktlaiz1FLGLIbKh4kz4JiF/P3LXaS5Iz6ZFyAeFDslaizVIsSoKkRHBZCF+SQiyNlyns+n1PeqpqbK3Tf9xcpSzZOgfIwZjx0Z2ussZHsVh5Jt4qIq0fxaJEs1t1A1zCgqVCEL+enuMDRVipMXXo8Hr+LeVolIjZZJkKDCFSTzEoa9Its04iEltm2VCBAtFLhS4W6BdIIUtFeqSSSO0gKRDknBgRI3vlqeQVZh3vQcyCnp2OuMbJsawl17JX79z5/mXyoJ54WoQhWykOdfJgGrctaeFmzwEOLMTom/DzcPTRu3lPsztASUIQtAlUHhxZf3DugQ4YtojdjaBPLN7FtFhXNHJ4P1wDIIcxXbjIXr6SR/Z22nvyDh4R8mZ5J/OjH3Qj1knmn7zpPDqXM+27T/9RASbv4kb3tRfmrMFFaMU5+2OnHDx9ik/d8/NyUhuqLyw7ZjFcqMEz+ALs8GEc2DTWtTlQXha/tMYXbKtndA5x6hihpsjEr8tSIkuKK7MKNF9KzFoXtALNjojyY7oSQ/9VnRfZjBz+nRF125vCpm5anqhDKizhUVG2U8nZP3ljXIxaGtkCub1qZOtK6o/MS6mrE4pxdA9y4vC9FOf+kJta7ox0bROb0UcR5cXhLShIbGCWVEzBWVUsiTjaJzzt0Degozkqh2qh5M54QGV/Rno1A8BBvPKoSnm+gQ/zKqEFeiXxtlvChx5v12gtMlZho7FVskwoX6tRxHUz5uKhjXuCT0GEiV081xJYpxkWSmp6KMKN+NqR9A1+HUu89LosxoiDKBaAg1h7+VRQD5L3d92CgD7cZdTrzzd7pVylBUJP6hRfz5p+57P04on9EV4Ys/FYJbysxkJSolzi8c8fCrWhag/yMOfTkhOuOLG8C43xu6GioqqS4e/wsHVMHl7/05IZK8m8Gwb5Nh8CkNGeVvPFHovpv7CmwyoZshho/Ui51xV4uBu+Ffmq/8RhlJCi7MVPQZSWVRB/yI4glPGIcaQPcDbZKkGOdm6qNi04ha20CMPzXjwyfsm2VQp3NeubWDMFJ0zjsVRDu6wBzRf55QpOB8OsNPTaqRVGGFqM2HvzZWgIGdbe4UcBbUKTFE8beW8DB4QHA2p7Wp74IGP2lB8kV92SYVbcECOi9r/FXdOklJEVXUDfIlRwwsyEjiuPom1Re89/OiKvx0UyfQEX3lQcIVpabOAIkTNPfeL4XJv8TFfcMIsSXO5n40SLqivLPxBTF6+yFkCtPh33rAw6ch78sbiITOCjdSycb7ImRSfENPuPlfn6MJ0hU5LNxId9YnIcMkKt80fN8qPmNo6hPJEQtOAMlu6JcQMDZWjN8aCb+HIxI6mzclBvD7T/7TVoKRGb81GN+AZoRLB4TEki0IQshY+Wfzn0oAfJCQZFZOCjfyHFQwhEASfBB4UMiEjH2+II+cAiMMToiETkZQ5JHTp49C6GAERR45ffpE93LdC08mtHdEk6ngdSQkXpIDR7wjNgd9FEIwHrW10o1ZgeCJn4jZJ0ohEhacrc/EjSV/Yv0I7wmE+bnTtYu2fuD9IQhTbhprhlOtGgGh/8I0WDEQuu3/auc13rj2hAX3nVGzF9xU15wwlZ97aca4w9oS144wdb+6olR+6m7tcCWTe4Vx7QhXV5TK8366EyeyHu/XrjCVCYH+fHVfArmbF0CVAwiDGvUEIzwiLOTnXu0Tl9luKn+/bgkREuYLu0E1s8cn9/drRggCzadgd9AM/+e0YT8EgW36/wtsLwIGubsWkNIuL0pb2USbbUEh4IWws3Q2QVu7wsdMAeXl5yHtDh4u54zZDjY6dIVCPjEPbhuQE4kPly/3oVBC1d2/LMPbX4mJGL9rz4FnUDJaZJb51Lx9F/YWWZ1AbU5BdZEvBAWagkYJRm/Tl2W0O7k1MhtO2i/zKQM1ClHds6YgGNQaM52/tCfD9XngAC7iDJAudwEqn0dSKEi8JOCUxFSQ/jLPA7BdSBaxTToWMT4b3k2Wy3YbAk+nBkDwGURqLyeTu+HMcvOwL/k/yGZp/7Ojd/QAAAAASUVORK5CYII=">
+          <p>Charanya</p>
+          <p>charanyapati@gmail.com
+        </div>
+
+        <div class="text">
+         <b> 1. Data Cleaning and Analysis on a COVID-19 Dataset</b><br>
+          Description: Collected and cleaned COVID-19 data to analyze trends such as daily case increases, recoveries, and death rates across different countries. This project demonstrates skills in data preprocessing, data cleaning, and basic analysis.<br>
+          <b>2. Basic Portfolio Website</b><br>
+          Description: Designed a simple and responsive portfolio website using HTML, CSS, and JavaScript. The website includes sections for About Me, Projects, Skills, and Contact Information.<br>
+          <b>3. Basic To-Do List Application</b><br>
+          Description: Developed a simple to-do list app where users can add, delete, and mark tasks as completed. This project highlights basic frontend development and interaction with users.<br>
+
+        </div>
+      </div>
+    </section>
+    <!-- services section-->
+    <div class="container">
+      <h1>Services</h1>
+      <div class="card-grid">
+          <div class="card">
+              <h2>Website Development</h2>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card">
+              <h2>Website Design</h2>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card">
+              <h2>Website Deployment</h2>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card">
+              <h2>SEO</h2>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card">
+              <h2>DevOps</h2>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <div class="card">
+              <h2>QA</h2>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+      </div>
+  </div>
+    </section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contact</h2>
+
+      <div class="group">
+        <div class="text">
+          <b>Let's Connect!</b><br>
+
+            Whether you're looking for a data-driven solution, a creative perspective on UI/UX, or just curious about my work, I'd love to hear from you! With a background in Data Science and a solid foundation in Python, databases, and algorithms, I am passionate about creating solutions that drive value. I'm always open to discussing new opportunities, projects, or collaborations. Feel free to reach out, and let's start a conversation that can turn ideas into reality!
+        </div>
+
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name">
+
+          <label for="email">Email</label>
+          <input type="email" id="email">
+
+          <label for="message">Message</label>
+          <textarea id="message" cols="30" rows="10"></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

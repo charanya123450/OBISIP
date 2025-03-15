@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Find Your Furry Friend</title>
+    <style>
+      .pet-slider {
+        text-align: center;
+        padding: 20px;
+      }
+      .slider-container {
+        position: relative;
+        max-width: 60%;
+        margin: auto;
+        overflow: hidden;
+      }
+      .slider {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+      }
+      .slide {
+        min-width: 100%;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .prev { left: 10px; }
+      .next { right: 10px; }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">Happy <span> Pets.</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#process">How It Works</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn sign__up">Sign Up</button>
+        <button class="btn sign__in">Sign In</button>
+      </div>
+    </nav>
+    <header class="header__container">
+      <div class="header__image">
+        <div class="header__image__card header__image__card-1">
+          <span><i class="ri-heart-line"></i></span>
+          Loving Homes
+        </div>
+        <div class="header__image__card header__image__card-2">
+          <span><i class="ri-dog-line"></i></span>
+          Adorable Pets
+        </div>
+        <div class="header__image__card header__image__card-3">
+          <span><i class="ri-user-heart-line"></i></span>
+          Happy Adopters
+        </div>
+        <div class="header__image__card header__image__card-4">
+          <span><i class="ri-hand-heart-line"></i></span>
+          Easy Process
+        </div>
+        <img src="assets/pets-header.jpg" alt="Happy Pets" />
+      </div>
+      <div class="header__content">
+        <h1>ADOPT A PET!<br />FIND YOUR <span>FOREVER FRIEND</span> TODAY</h1>
+        <p>
+          Give a loving home to a pet in need. Start your journey to finding a loyal companion and change a life forever.
+        </p>
+        <form action="/">
+          <div class="input__row">
+            <div class="input__group">
+              <h5>Pet Type</h5>
+              <div>
+                <span><i class="ri-search-line"></i></span>
+                <input type="text" placeholder="Dog, Cat, Rabbit..." />
+              </div>
+            </div>
+            <div class="input__group">
+              <h5>Location</h5>
+              <div>
+                <span><i class="ri-map-pin-line"></i></span>
+                <input type="text" placeholder="Your City" />
+              </div>
+            </div>
+          </div>
+          <button type="submit">Search</button>
+        </form>
+        
+      </div>
+    </header>
+    
+    <!-- Pet Slider Section -->
+    <section class="pet-slider">
+      <h2>Meet Our Adorable Pets</h2>
+      <div class="slider-container">
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <div class="slider">
+          <img src="assets/hpet.jpg" alt="Pet 1" class="slide" />
+          <img src="assets/cpet.jpg" alt="Pet 2" class="slide" />
+          <img src="assets/rpet.jpg" alt="Pet 3" class="slide" />
+          <img src="assets/bpet.jpg" alt="Pet 4" class="slide" />
+          <img src="assets/fpet.jpg" alt="Pet 5" class="slide" />
+          <img src="assets/dpet.jpg" alt="Pet 6" class="slide" />
+        </div>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <script>
+      let slideIndex = 0;
+      const slides = document.querySelectorAll(".slide");
+      const slider = document.querySelector(".slider");
+
+      function moveSlide(n) {
+        slideIndex = (slideIndex + n + slides.length) % slides.length;
+        updateSlider();
+      }
+
+      function updateSlider() {
+        slider.style.transform = `translateX(-${slideIndex * 100}%)`;
+      }
+
+      function autoSlide() {
+        moveSlide(1);
+        setTimeout(autoSlide, 3000);
+      }
+
+      setTimeout(autoSlide, 3000);
+    </script>
+    <div class="container">
+      <div class="card__container">
+         <article class="card__article">
+            <img src="assets/cat.jpg" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Iran/Persia</span>
+               <h2 class="card__title">Persian Cat</h2>
+               <p>"With its luxurious long coat and calm temperament, the Persian cat is one of the most popular and affectionate feline breeds."
+                </p>
+            </div>
+         </article>
+
+         <article class="card__article">
+            <img src="assets/maltese.jpg" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Malta</span>
+               <h2 class="card__title"> Maltese </h2>
+               
+               <p>"The Maltese is a small yet energetic companion dog known for its silky white coat and playful personality."</p>
+            </div>
+         </article>
+
+         <article class="card__article">
+            <img src="assets/birds.jpg" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Australia</span>
+               <h2 class="card__title">Budgerigar</h2>
+              
+               <p>"The budgerigar, also known as the budgie, is a colorful and social parrot species loved for its ability to mimic sounds and interact with humans."</p>
+            </div>
+         </article>
+         <article class="card__article">
+          <img src="assets/rabbit.jpg" alt="image" class="card__img">
+
+          <div class="card__data">
+             <span class="card__description"> Netherlands</span>
+             <h2 class="card__title"> Holland Lop</h2>
+             
+             <p>"With its adorable floppy ears and friendly nature, the Holland Lop is a favorite among rabbit enthusiasts."</p>
+          </div>
+       </article>
+       <article class="card__article">
+        <img src="assets/nemo.jpg" alt="image" class="card__img">
+
+        <div class="card__data">
+           <span class="card__description"> Indo-Pacific, Great Barrier Reef</span>
+           <h2 class="card__title"> Clownfish</h2>
+           
+           <p>"The clownfish, made famous by ‘Finding Nemo,’ forms a unique symbiotic relationship with sea anemones for protection in the wild."</p>
+        </div>
+     </article>
+     <article class="card__article">
+      <img src="assets/pet2.jpg" alt="image" class="card__img">
+
+      <div class="card__data">
+         <span class="card__description">Scotland</span>
+         <h2 class="card__title">Golden Retriever</h2>
+         
+         <p>"Golden Retrievers are intelligent, friendly, and highly trainable, making them ideal family pets and service dogs."</p>
+      </div>
+      </article>
+      </div>
+   </div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+
+   <!-- SECTION 4: Contact -->
+   <section id="contact" class="contact-section">
+    <h2>Get in Touch With Us!</h2>
+
+    <div class="group">
+      <div class="text">
+        <b>Let's Connect!</b><br>
+        <p>"Have questions about pet adoption? Reach out to us—we’re happy to help you find your perfect furry friend!"</p><br>
+        <p>Contact Details:</p><br>
+          <p>📍 Location:</p><br>
+          <p>📞 Phone:</p><br>
+          <p>📧 Email:</p><br>
+
+          </div>
+
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+
+        <label for="email">Email</label>
+        <input type="email" id="email">
+
+        <label for="message">Message</label>
+        <textarea id="message" cols="30" rows="10"></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  </body>
+</html>
